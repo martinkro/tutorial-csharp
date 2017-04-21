@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CheatConsole
 {
-    public class Class1
+    public class CheatConsole
     {
     }
 }

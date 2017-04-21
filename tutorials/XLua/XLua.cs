@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace XLua
 {
-    public class Class1
+    public class XLua
     {
     }
 }

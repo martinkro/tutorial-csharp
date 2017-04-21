@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheatConsole", "CheatConsol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XLua", "XLua\XLua.csproj", "{FC7E5247-5F23-46EE-B1F1-E4276FFF4290}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheatConsoleTest", "CheatConsoleTest\CheatConsoleTest.csproj", "{35267C69-2818-42FC-800A-450756E66EBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FC7E5247-5F23-46EE-B1F1-E4276FFF4290}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC7E5247-5F23-46EE-B1F1-E4276FFF4290}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC7E5247-5F23-46EE-B1F1-E4276FFF4290}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35267C69-2818-42FC-800A-450756E66EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35267C69-2818-42FC-800A-450756E66EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35267C69-2818-42FC-800A-450756E66EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35267C69-2818-42FC-800A-450756E66EBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
