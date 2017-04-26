@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XLua", "XLua\XLua.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheatConsoleTest", "CheatConsoleTest\CheatConsoleTest.csproj", "{35267C69-2818-42FC-800A-450756E66EBC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibA", "LibA\LibA.csproj", "{857A897B-EFF3-4129-8746-9B5B76C2ABAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibB", "LibB\LibB.csproj", "{ABB62F74-0540-411E-A38A-ED9AC7B8EB97}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{35267C69-2818-42FC-800A-450756E66EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35267C69-2818-42FC-800A-450756E66EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35267C69-2818-42FC-800A-450756E66EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{857A897B-EFF3-4129-8746-9B5B76C2ABAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{857A897B-EFF3-4129-8746-9B5B76C2ABAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{857A897B-EFF3-4129-8746-9B5B76C2ABAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{857A897B-EFF3-4129-8746-9B5B76C2ABAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABB62F74-0540-411E-A38A-ED9AC7B8EB97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB62F74-0540-411E-A38A-ED9AC7B8EB97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB62F74-0540-411E-A38A-ED9AC7B8EB97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB62F74-0540-411E-A38A-ED9AC7B8EB97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
