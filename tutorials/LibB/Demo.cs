@@ -15,5 +15,8 @@ namespace LibB
             var a = new A();
             var map = a.Map;
         }
+
+        public int Add(int a, int b) { return a + b; }
+        public static float Add(int a, int b) { return a + b; }
     }
 }
