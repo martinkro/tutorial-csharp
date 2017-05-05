@@ -10,24 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace HelloWPF
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for StackWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class StackWindow : Window
     {
-        public MainWindow()
+        public StackWindow()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show(string.Format("Hi: {0}", this.txtName.Text));
         }
     }
 }
