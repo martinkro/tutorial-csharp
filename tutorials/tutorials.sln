@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibB", "LibB\LibB.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWPF", "HelloWPF\HelloWPF.csproj", "{8C7A4E5F-E246-42C8-A28A-325FE8DD7481}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMVVM", "SimpleMVVM\SimpleMVVM.csproj", "{F1D122C9-BA05-49BB-8054-465E815A9E8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{8C7A4E5F-E246-42C8-A28A-325FE8DD7481}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C7A4E5F-E246-42C8-A28A-325FE8DD7481}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C7A4E5F-E246-42C8-A28A-325FE8DD7481}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1D122C9-BA05-49BB-8054-465E815A9E8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1D122C9-BA05-49BB-8054-465E815A9E8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1D122C9-BA05-49BB-8054-465E815A9E8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1D122C9-BA05-49BB-8054-465E815A9E8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:HelloWPF"
         mc:Ignorable="d"
         Title="StackWindow" Height="300" Width="300">
-    <StackPanel x:Name="spMain" Orientation="Horizontal">
+    <StackPanel x:Name="spMain" Orientation="Vertical">
         <Border Background="Brown" Padding="50" />
         <Border Background="Green" Padding="50" />
         <Border Background="Yellow" Padding="50" />
