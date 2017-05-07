@@ -4,9 +4,23 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TreeViewDemo"
+        xmlns:advanced="clr-namespace:TreeViewDemo.LoadOnDemand"
+        xmlns:basic="clr-namespace:TreeViewDemo.TextSearch"
+        xmlns:checkbox="clr-namespace:TreeViewDemo.CheckBoxDemo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        FontSize="14"
+        Title="MainWindow" Height="400" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <TabControl Margin="8">
+        <TabItem Header="Text Search">
+            <basic:TextSearchUserControl />
+        </TabItem>
+
+        <TabItem Header="Load-On-Demand">
+            <advanced:LoadOnDemandUserControl />
+        </TabItem>
+        <TabItem Header="CheckBox1">
+            <checkbox:CheckBoxUserControl />
+        </TabItem>
+    </TabControl>
 </Window>

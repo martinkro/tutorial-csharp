@@ -55,6 +55,32 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CheckBoxDemo\CheckBoxUserControl.xaml.cs">
+      <DependentUpon>CheckBoxUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CheckBoxDemo\FooViewModel.cs" />
+    <Compile Include="Control\VirtualToggleButton.cs" />
+    <Compile Include="LoadOnDemand\LoadOnDemandUserControl.xaml.cs">
+      <DependentUpon>LoadOnDemandUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoadOnDemand\ViewModel\CityViewModel.cs" />
+    <Compile Include="LoadOnDemand\ViewModel\CountryViewModel.cs" />
+    <Compile Include="LoadOnDemand\ViewModel\RegionViewModel.cs" />
+    <Compile Include="LoadOnDemand\ViewModel\StateViewModel.cs" />
+    <Compile Include="LoadOnDemand\ViewModel\TreeViewItemViewModel.cs" />
+    <Compile Include="TextSearch\TextSearchUserControl.xaml.cs">
+      <DependentUpon>TextSearchUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TextSearch\ViewModel\FamilyTreeViewModel.cs" />
+    <Compile Include="TextSearch\ViewModel\PersonViewModel.cs" />
+    <Page Include="CheckBoxDemo\CheckBoxUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoadOnDemand\LoadOnDemandUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -63,10 +89,19 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DataAccess\Database.cs" />
+    <Compile Include="DataModel\City.cs" />
+    <Compile Include="DataModel\Person.cs" />
+    <Compile Include="DataModel\Region.cs" />
+    <Compile Include="DataModel\State.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="TextSearch\TextSearchUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -94,6 +129,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="LoadOnDemand\Images\City.png" />
+    <Resource Include="LoadOnDemand\Images\Region.png" />
+    <Resource Include="LoadOnDemand\Images\State.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
