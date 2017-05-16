@@ -9,6 +9,6 @@
     <DockPanel Margin="5">
         <ProgressBar IsIndeterminate="True" Height="25" Name="pbStatus" Margin="5" DockPanel.Dock="Top"/>
         <Button Content="Test" Click="ButtonClick" Margin="5" Name="btnTest" DockPanel.Dock="Bottom"/>
-        <local:UserControlTreeViewLazyLoading />
+        <local:UserControlTreeView />
     </DockPanel>
 </Window>
