@@ -1,3 +1,45 @@
+## 如何在64bit机器上dump一个32bit的进程
+procdump -ma HelloWorld
+
+## SOS 调试CLR
+!clrstack
+!dumpstackobjects
+!dumpobj 019f240c
+
+!dumpdomain
+!dumpassembly 00e4ba0
+!dumpmodule -mt 00762c3c
+!dumpmt -md 
+!dumpmd
+
+Method Descriptor
+
+System.Net.HttpWebRequest.EndGetResponse(System.IAsyncResult)
+0843ef94 04dacc09 EQATEC.Analytics.Monitor.Messaging.MessageSender+<>c__DisplayClassd.<ReadCallbackRequest>b__b(System.IAsyncResult)
+0843efd8 6dadec05 System.Net.LazyAsyncResult.Complete(IntPtr)
+0843f00c 6daee05c System.Net.ContextAwareResult.CompleteCallback(System.Object)
+0843f010 6e5ba417 System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+0843f07c 6e5ba366 System.Threading.ExecutionContext.Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)
+0843f090 6e5ba321 System.Threading.ExecutionContext.Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object)
+0843f0a8 6daec82f System.Net.ContextAwareResult.Complete(IntPtr)
+0843f0c0 6dadeb8e System.Net.LazyAsyncResult.ProtectedInvokeCallback(System.Object, IntPtr)
+0843f0e8 6db0e326 System.Net.HttpWebRequest.ProcessResponse()
+0843f124 6db0df74 System.Net.HttpWebRequest.SetResponse(System.Net.CoreResponseData)
+0843f164 6db0de1b System.Net.HttpWebRequest.SetAndOrProcessResponse(System.Object)
+0843f180 6db0b1c8 System.Net.ConnectionReturnResult.SetResponses(System.Net.ConnectionReturnResult)
+0843f1b0 6db0b833 System.Net.Connection.ReadComplete(Int32, System.Net.WebExceptionStatus)
+0843f1f4 6daedb3d System.Net.Connection.ReadCallback(System.IAsyncResult)
+0843f21c 6daeda78 System.Net.Connection.ReadCallbackWrapper(System.IAsyncResult)
+0843f228 6dadec05 System.Net.LazyAsyncResult.Complete(IntPtr)
+0843f25c 6daec83e System.Net.ContextAwareResult.Complete(IntPtr)
+0843f274 6dadeb8e System.Net.LazyAsyncResult.ProtectedInvokeCallback(System.Object, IntPtr)
+0843f29c 6daec652 System.Net.Sockets.BaseOverlappedAsyncResult.CompletionPortCallback(UInt32, UInt32, System.Threading.NativeOverlapped*)
+0843f2d0 6e6210a4 System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32, UInt32, System.Threading.NativeOverlapped*)
+0843f3c4 6f401396 [GCFrame: 0843f3c4] 
+
+
+sxe -c "!pe;!clrstack;gc" clr
+
 ## Variables
 
 ## 问号运算符

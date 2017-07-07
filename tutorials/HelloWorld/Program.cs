@@ -8,6 +8,24 @@ using DamienG.Security.Cryptography;
 
 namespace HelloWorld
 {
+
+    interface ISkeletonAnimation
+    {
+        void LateUpdate();
+    }
+
+    class SkeletonRenderer
+    {
+        public virtual void LateUpdate()
+        {
+            Console.WriteLine("SkeletonRenderer::LateUpdate");
+        }
+    }
+
+    class SkeletonAnimation:SkeletonRenderer,ISkeletonAnimation
+    {
+
+    }
     class Program
     {
         delegate string GetString();
