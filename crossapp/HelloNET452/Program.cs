@@ -11,6 +11,9 @@ namespace HelloNET452
         static void Main(string[] args)
         {
             Console.WriteLine("Hello,NET 4.5.2");
+            Type type = typeof(Program);
+            Console.WriteLine("Type Name:" + type.Name);
+            
         }
     }
 }
