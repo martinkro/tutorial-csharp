@@ -1,0 +1,4 @@
+The TypeRef table has the following columns:
+ResolutionScope (an index into a Module, ModuleRef, AssemblyRef or TypeRef table, or null; more precisely, a ResolutionScope  (§24.2.6) coded index)
+TypeName (an index into the String heap)
+TypeNamespace (an index into the String heap)

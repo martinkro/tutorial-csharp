@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
 namespace HelloWorld
 {
@@ -17,6 +20,13 @@ namespace HelloWorld
         static void Main(string[] args)
         {
             Console.WriteLine("Hello,NET 4.0");
+
+            RuntimeCompatibilityAttribute attr = new RuntimeCompatibilityAttribute();
+            FileStream fileStream = new FileStream("f:\\temp.dat", FileMode.Create);
+            BinaryFormatter b = new BinaryFormatter();
+            b.Serialize(fileStream, attr);
+
+            string s = attr.ToString();
             string classname = "ActorInfo";
             string tx = string.Format("static StringItem s_{0}-{0}Methods[]={{", classname);
             Console.WriteLine(tx);
